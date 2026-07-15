@@ -1,0 +1,86 @@
+:root {
+  --ink: #17251f;
+  --muted: #617068;
+  --paper: #f7f8f3;
+  --cream: #edf0e7;
+  --sage: #b8c9b4;
+  --moss: #45624f;
+  --yellow: #e7b94e;
+  --line: #d9e0d7;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.65; }
+a { color: inherit; }
+.site-header { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 28px 0; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 800; letter-spacing: -.03em; font-size: 1.12rem; }
+.brand-mark { display: grid; place-items: center; width: 30px; height: 30px; color: var(--paper); background: var(--moss); border-radius: 50% 50% 50% 8px; font-family: var(--serif); font-style: italic; font-size: 1.25rem; }
+nav { display: flex; gap: 28px; font-size: .85rem; color: var(--muted); }
+nav a, .footer-links a { text-decoration: none; }
+nav a:hover, .footer-links a:hover, .back-link:hover { color: var(--moss); }
+.hero { width: min(1180px, calc(100% - 48px)); min-height: 620px; margin: 0 auto; display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 60px; }
+.eyebrow { margin: 0 0 18px; color: var(--moss); font-size: .7rem; font-weight: 800; letter-spacing: .19em; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; line-height: 1.05; }
+.hero h1 { margin-bottom: 28px; font-size: clamp(3.6rem, 7vw, 6.8rem); }
+h1 em { color: var(--moss); font-style: italic; }
+.hero-text { max-width: 440px; margin-bottom: 33px; color: var(--muted); font-size: 1.08rem; }
+.button { display: inline-flex; align-items: center; gap: 16px; padding: 14px 21px; color: var(--paper); background: var(--ink); text-decoration: none; font-size: .85rem; transition: transform .2s ease, background .2s ease; }
+.button:hover { background: var(--moss); transform: translateY(-2px); }
+.hero-shape { position: relative; min-height: 440px; overflow: hidden; background: var(--cream); border-radius: 47% 53% 58% 42% / 45% 42% 58% 55%; }
+.hero-shape::before { position: absolute; content: ''; inset: 12% 12% 12% 12%; border: 1px solid rgba(69, 98, 79, .35); border-radius: 50%; }
+.shape-letter { position: absolute; inset: 0; display: grid; place-items: center; color: var(--moss); font-family: var(--serif); font-size: 16rem; font-style: italic; opacity: .82; }
+.orb { position: absolute; border-radius: 50%; filter: blur(.2px); }
+.orb-one { width: 150px; height: 150px; top: 11%; right: 8%; background: var(--yellow); opacity: .82; }
+.orb-two { width: 210px; height: 210px; bottom: -4%; left: -5%; background: var(--sage); opacity: .84; }
+.orb-three { width: 85px; height: 85px; top: 19%; left: 11%; background: var(--moss); opacity: .72; }
+.section { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 105px 0; border-top: 1px solid var(--line); }
+.split { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; }
+h2 { margin-bottom: 22px; font-size: clamp(2.6rem, 5vw, 4.8rem); }
+.section-copy { max-width: 570px; color: var(--muted); font-size: 1.02rem; }
+.section-copy p + p { margin-top: 20px; }
+.market-section { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; }
+.market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-self: end; }
+.market-card { min-height: 182px; padding: 22px 18px; background: var(--cream); }
+.market-card span { color: var(--moss); font-size: .7rem; font-weight: 800; }
+.market-card h3 { margin: 35px 0 4px; font-size: 1rem; }
+.market-card p { color: var(--muted); font-size: .78rem; }
+.notice { width: min(1180px, calc(100% - 48px)); margin: 0 auto 105px; padding: 62px 68px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; color: var(--paper); background: var(--moss); }
+.notice .eyebrow { color: var(--yellow); }
+.notice h2 { margin-bottom: 0; }
+.notice > p { align-self: center; margin: 0; color: #dce6db; }
+.site-footer { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 34px 0 42px; border-top: 1px solid var(--line); display: flex; align-items: end; justify-content: space-between; color: var(--muted); font-size: .78rem; }
+.site-footer strong { color: var(--ink); }
+.footer-links { display: flex; gap: 24px; }
+.legal-page { width: min(820px, calc(100% - 48px)); margin: 70px auto 110px; }
+.legal-page h1 { margin-bottom: 12px; font-size: clamp(3rem, 7vw, 5.5rem); }
+.updated { color: var(--muted); font-size: .85rem; }
+.legal-intro { margin: 45px 0; padding: 25px 28px; border-left: 3px solid var(--yellow); background: var(--cream); color: var(--moss); }
+.legal-page h2 { margin: 48px 0 13px; font-size: 1.75rem; letter-spacing: -.02em; }
+.legal-page p { color: var(--muted); }
+.legal-page strong { color: var(--ink); overflow-wrap: anywhere; }
+.back-link { display: inline-block; margin-top: 30px; color: var(--moss); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 760px) {
+  .site-header, .hero, .section, .notice, .site-footer, .legal-page { width: min(100% - 34px, 600px); }
+  .site-header { padding: 20px 0; }
+  nav { gap: 15px; }
+  .hero { display: block; min-height: auto; padding: 75px 0 82px; }
+  .hero-shape { min-height: 330px; margin-top: 55px; }
+  .shape-letter { font-size: 11rem; }
+  .split, .market-section, .notice { display: block; }
+  .section { padding: 75px 0; }
+  .split .section-copy { margin-top: 38px; }
+  .market-grid { margin-top: 40px; }
+  .market-card { min-height: 155px; padding: 17px 12px; }
+  .market-card h3 { margin-top: 28px; font-size: .9rem; }
+  .notice { margin-bottom: 75px; padding: 42px 28px; }
+  .notice > p { margin-top: 30px; }
+  .site-footer { gap: 22px; align-items: start; }
+  .footer-links { display: block; text-align: right; }
+  .footer-links span { display: block; margin-top: 8px; }
+  .legal-page { margin-top: 45px; }
+}
