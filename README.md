@@ -12,12 +12,12 @@ This folder contains a simple public website and the privacy notice URL needed f
 
 If the repository is named `splotiva-site`, the URLs will usually be:
 
-- Company website: `https://YOUR-USERNAME.github.io/splotiva-site/`
-- Privacy notice: `https://YOUR-USERNAME.github.io/splotiva-site/privacy.html`
+- Company website: `https://gorkamorka-noob.github.io/splotiva-site/`
+- Privacy notice: `https://gorkamorka-noob.github.io/splotiva-site/privacy.html`
 
-If the repository is named exactly `YOUR-USERNAME.github.io`, the URLs will usually be:
+If the repository is named exactly `gorkamorka-noob.github.io`, the URLs will usually be:
 
-- Company website: `https://YOUR-USERNAME.github.io/`
-- Privacy notice: `https://YOUR-USERNAME.github.io/privacy.html`
+- Company website: `https://gorkamorka-noob.github.io/`
+- Privacy notice: `https://gorkamorka-noob.github.io/privacy.html`
 
 Enable GitHub Pages from the repository's Settings → Pages, choose deployment from the `main` branch and the `/ (root)` folder, then open the generated URLs in a private browser window to confirm that they work without signing in.
